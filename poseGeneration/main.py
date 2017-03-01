@@ -45,7 +45,7 @@ def euler2quat(z=0, y=0, x=0):
 class InstanceGenerator():
     def __init__(self,axes=[1,1,1],training=True,validation=True,test=True):
         print("## INITATING GENERATOR...")
-        bpy.ops.import_mesh.stl(filepath="/home/akatosh/DATASETS/MULTITUDE/BREATHER/breather.STL")
+        bpy.ops.import_mesh.stl(filepath=home+"/DATASETS/MULTITUDE/BREATHER/breather.STL")
         self.ob = bpy.data.objects['breather']
         self.scene = bpy.context.scene
         bpy.context.scene.render.engine = 'BLENDER_RENDER'
