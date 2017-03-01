@@ -10,7 +10,10 @@ import pickle
 from random import shuffle
 import radon 
 import euler
-DATASET_PATH='/home/akatosh/DATASETS'
+from os.path import expanduser
+
+home = expanduser("~")
+DATASET_PATH=home+'/DATASETS'
 MODEL_PATH='MULTITUDE/BREATHER'
 
 training=int(sys.argv[1])
