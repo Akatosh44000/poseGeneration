@@ -10,8 +10,10 @@ import pickle
 import imageio
 import skimage.transform
 import math
+from os.path import expanduser
 
-DATASET_PATH='/home/akatosh/DATASETS'
+home = expanduser("~")
+DATASET_PATH=home+'/DATASETS'
 MODEL_PATH='MULTITUDE/BREATHER'
 
 training=int(sys.argv[5])
